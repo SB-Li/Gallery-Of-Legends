@@ -1,0 +1,424 @@
+*{
+    font-family: Trebuchet MS;
+}
+
+body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background: url(/img/background-color.png) center;*/
+    background-color: #1C2229;
+}
+
+p, li, h1, h2, h3, h4, a{
+    color: #C2A365;
+}
+
+.wrapper{
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    /*background-image: url(/img/background-color.png);*/
+    background-color: #1C2229;
+    padding: 20px 0;
+}
+
+header h1{
+    margin: 0;
+    text-align: center;
+    width: 330px;
+    float: left;
+    color: #C2A365;
+}
+
+header nav{
+    float: right;
+}
+
+header nav h2{
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #C2A365;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.submenu-container, .submenu-container2, .submenu-container3{
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    /*background: url(/img/background-color.png);*/
+    background-color: #1C2229;
+    border: 2px solid #C2A365;
+    border-radius: 40px;
+    padding: 10px;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#official:hover>a+.submenu-container,
+#fanart:hover>a+.submenu-container2,
+#esport:hover>a+.submenu-container3{
+    opacity: 1;
+    visibility: visible;    
+} 
+
+.submenu-container li:hover>a,
+.submenu-container2 li:hover>a,
+.submenu-container3 li:hover>a{
+    background: #C2A365;
+    color: #1C2229;
+} 
+
+.list{
+    float: left;
+    width: 20%;
+}
+
+.list li{
+    clear: both;
+}
+
+.list li a{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #C2A365;
+}
+
+#main-banner img{
+    width: 100%;
+}
+
+#selling-points{
+    margin-top: 60px;
+}
+
+#selling-points li{
+    width: 23%;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 1%;
+    line-height: 1.6em;
+}
+
+#selling-points a{
+    color: #C2A365;
+    text-decoration: none;
+}
+
+
+#selling-points a:hover{
+    color: white;
+}
+
+#selling-points img, .works img{
+    border: 2px solid #C2A365;
+}
+
+#selling-points:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.works{
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 2px solid #C2A365;
+}
+
+.works h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.works li{
+    width: 32%;
+    float: left;
+    list-style-type: none;
+}
+
+.works li img{
+    width: 100%;
+}
+
+.works li:nth-child(2){
+    margin: 0 2%;
+}
+
+.works ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.works h3{
+    margin-bottom: 0px;
+}
+
+.works p{
+    line-height: 1.6em;
+}
+
+p.tags{
+    color: #C2A365;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#quote{
+    margin: 60px auto;
+    padding: 40px 20%;
+    background-color: #1C2229;
+    text-align: center;
+    color: #C2A365;
+    border:3px solid #C2A365;
+    border-radius: 80px;
+    font-size: 20px;
+    line-height: 1.6em; 
+}
+
+#quote blockquote{
+    font-size: 20px;
+}
+   
+#lol{
+     width: 50%;   
+}
+
+footer{
+    /*background: url(/img/background-color.png);*/
+    background-color: #1C2229;
+    padding: 30px 0;
+}
+
+footer h4{
+    margin: 0;
+    color: #C2A365;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+footer ul{
+    float: left;
+    width: 25%;
+    list-style-type: none;
+}
+
+footer li{
+    color: #C2A365;
+    width: 80%;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6em;
+    padding-left: 20px;    
+} 
+
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*
+footer li.tw{
+    background: url(/img/tweet.jpg) no-repeat left 6px;
+}
+
+footer li.link{
+    background: url(/img/link.jpg) no-repeat left 6px;
+}
+
+footer li.tel{
+    background: url(/img/tel.jpg) no-repeat left 6px;
+}
+
+footer li.e-mail{
+    background: url(/img/e-mail.jpg) no-repeat left 6px;
+}
+
+footer li.address{
+    background: url(/img/address.jpg) no-repeat left 6px;
+}
+
+footer li.smile{
+    background: url(/img/smile.jpg) no-repeat left 6px;
+}*/
+
+footer .wrapper a {
+    text-decoration: none;  
+    color: #C2A365;
+}
+
+#copyright{
+    text-align: center;
+    clear: both;
+    padding-top: 30px;
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    border-top: 2px solid #C2A365;
+    color: #C2A365;
+    font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px){
+
+#selling-points li{
+    width: 40%;
+    padding: 0 5%;
+    margin: 20px 0;
+}
+
+#selling-points li:nth-child(odd){
+    clear: both;
+}
+
+footer ul{
+    width: 50%;
+}
+
+footer ul:nth-child(odd){
+    clear: both;
+}
+
+}
+
+@media screen and (max-width: 875px){
+
+header nav{
+    float: none;
+    margin: auto;
+}
+
+header nav li{
+    margin-left: 0px;
+    width: 16.66%;
+    text-align: center;
+    font-size: 14px;
+}
+
+header h1.logo{
+    float: none;
+    margin: 0 auto 15px;
+}
+
+.submenu-container, .submenu-container2, .submenu-container3{
+    width: 90%;
+    left:2.5%;
+}
+    
+.works li{
+    width: 70%;
+    margin: 30px 15% !important;
+    float: none;
+}
+
+.works h2{
+    text-align: center;
+}
+
+    
+#lol{
+     width: 75%;   
+}
+  
+}
+
+
+@media screen and (max-width: 480px){
+    
+header nav li{
+    float: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+header .wrapper{
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    padding-bottom: 0;
+}
+
+header nav li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #C2A365;
+    border-top: 1px solid #C2A365;
+}
+    
+#last-link {
+    border-bottom: 1px solid #C2A365;
+}
+    
+#selling-points li{
+    width: 80%;
+    padding: 0 10%;
+    margin: 20px 0;
+}
+
+.works li{
+    width: 80%;
+    margin: 30px 10% !important;
+}
+
+#quote{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer ul{
+    width: 100%;
+    float: none;
+    border-top: 2px solid #333;
+}
+
+#quote blockquote{
+    font-size: 15px;
+}
+#lol{
+     width: 100%;   
+}
+
+}
+
+
